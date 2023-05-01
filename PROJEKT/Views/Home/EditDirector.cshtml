@@ -1,0 +1,21 @@
+﻿@model IList<Director>
+@{
+    ViewData["Title"] = "Edit Director";
+}
+<h1>@ViewData["Title"]</h1>
+@using (Html.BeginForm("EditDirector", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <table>
+        @for (var i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <td><button type="submit" name="submitButton" value="@Model[i].Id">X</button></td>
+                <td>
+                    @Html.HiddenFor(m => Model[i].Id)
+                    @Html.TextBoxFor(m => Model[i].FirstName)
+                <td>@Html.TextBoxFor(m => Model[i].Surname)</td>
+            </tr>
+        }
+    </table>
+    <button type="submit" name="submitButton" value="0"> Save Changes </button>
+}

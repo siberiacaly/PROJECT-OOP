@@ -1,0 +1,29 @@
+﻿@model List<IndexView>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+<u1>
+    <table>
+        <thead>
+            <tr>
+                <td>Title</td>
+                <td>Genre</td>
+                <td>Release date</td>
+                <td>Actors</td>
+                <td>Directors</td>
+            </tr>
+        </thead>
+    @foreach (var movie in Model)
+    {
+        <tr>
+            <td>@movie.NameOfMovie</td>
+            <td>@movie.Genre</td>
+            <td>@movie.ReleaseDate</td>
+            <td>@movie.Actors</td>
+            <td>@movie.Directors</td>
+        </tr>
+    }
+    </table>
+</u1>

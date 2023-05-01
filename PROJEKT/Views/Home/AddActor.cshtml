@@ -1,0 +1,20 @@
+﻿@model FINALNIPROJEKTBOOP.Models.Actor
+@{
+    ViewData["Title"] = "AddActor";
+}
+
+<form asp-action="AddActor" method="post">
+    <div class="form-group">
+        <label asp-for="FirstName" class="control-label">Insert actor's first name:</label>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Surname" class="control-label">Insert actor's surname:</label>
+        <input asp-for="Surname" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="NameOfMovie" class="control-label">Actor played in this movie:</label>
+        <input asp-for="NameOfMovie" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
