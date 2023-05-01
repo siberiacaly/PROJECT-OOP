@@ -1,0 +1,21 @@
+FILMY -
+		Název filmu
+		--HERCI
+		DATAUM VYDANI
+		--REZISER
+		ZANR
+
+
+
+zÁLOŽKY
+
+	Home
+		-VÝPIS FILMU S VLASTNOSTMA-
+	Přidat +
+		FILM - název, release date, zanr +
+		HEREC - jmeno, prijmeni, film ve kterem ucinkoval
+		REJZA - jmeno, prijmeni, film kterej reziroval
+	UPRAVIT +
+		FILM +
+		HERCE
+		REJZU

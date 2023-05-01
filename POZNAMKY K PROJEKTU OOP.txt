@@ -1,0 +1,20 @@
+- ID nikdy nebude 0 v databazi, proto submit button je 0
+- SQL - vytvoreni sql databaze, tables, propojovaci tables, keys
+- FRONTEND - WEB, html, kody
+- BACKEND - ASP.NET core - MovieModel, HomeController
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
